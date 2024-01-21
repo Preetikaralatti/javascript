@@ -35,3 +35,35 @@ const myFunction = function(){
 }
 
 console.log(typeof heros);
+
+// to study by link below
+// http://https//262.ecma-international.org/5.1/#sec-11.4.3
+
+
+//*************************************
+
+// stack memory (primitive) , heap memory (Non - primitive)
+
+
+let myYoutubename = "hiteshchoudharyditcom"
+
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+// object : values store in heap memory
+
+let userOne= {
+    email : "user@google.com",
+    upi : "user@ybl"
+}
+
+let userTwo= userOne
+//  both two having the same reference
+
+userTwo.email = "hitesh@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
